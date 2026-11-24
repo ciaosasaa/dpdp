@@ -1,6 +1,11 @@
 # Versi pustaka yang dipakai (CPU).
+#
+# Baris --extra-index-url wajib: tanpanya pip memasang build torch untuk Linux
+# yang menarik CUDA (beberapa GB) dan gagal di hosting gratis. Dengan baris ini
+# pip memilih build CPU (torch==...+cpu) yang jauh lebih kecil.
+--extra-index-url https://download.pytorch.org/whl/cpu
 numpy==2.5.4
 Pillow==13.0.0
 streamlit==1.67.0
-torch==2.15.0
+torch==2.15.0+cpu
 torchvision==0.29.2

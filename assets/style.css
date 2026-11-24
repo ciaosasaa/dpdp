@@ -1,6 +1,7 @@
 /* DPdp - "buku panduan sawah".
    Medan hijau datar, tinta krem, serif display Prata + sans Manrope, satu aksen
-   chartreuse. Semua warna lewat token; tidak ada literal di luar blok :root. */
+   chartreuse. Seluruh warna lewat variabel CSS; tidak ada literal di luar
+   blok :root. */
 
 @import url('https://fonts.googleapis.com/css2?family=Prata&family=Manrope:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500&display=swap');
 
