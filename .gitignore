@@ -1,0 +1,15 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Notebook
+.ipynb_checkpoints/
+
+# Streamlit lokal
+.streamlit/secrets.toml
+
+# Sistem operasi
+.DS_Store
+Thumbs.db

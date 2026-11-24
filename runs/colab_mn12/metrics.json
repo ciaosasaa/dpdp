@@ -1,0 +1,78 @@
+{
+  "model": "mobilenet_v2_tl",
+  "mode": "head",
+  "arch": "mobilenet_v2_tl",
+  "pretrained": true,
+  "tag": "colab_mn12",
+  "seed": 42,
+  "device": "cuda",
+  "img_size": 224,
+  "class_names": [
+    "Bacterial_Blight",
+    "Blast",
+    "Brown_Spot",
+    "Tungro"
+  ],
+  "split_counts": {
+    "train": 3835,
+    "val": 479,
+    "test": 480
+  },
+  "n_params": 2263160,
+  "n_trainable": 5124,
+  "best_val_macro_f1": 0.9656964907235287,
+  "best_epoch": 11,
+  "history": [
+    {"epoch": 1, "train_loss": 0.7855610931913058, "val_accuracy": 0.918580375782881, "val_macro_f1": 0.9129769451734863},
+    {"epoch": 2, "train_loss": 0.5997142471373081, "val_accuracy": 0.9227557411273486, "val_macro_f1": 0.9128487201610583},
+    {"epoch": 3, "train_loss": 0.5667214538097335, "val_accuracy": 0.9373695198329853, "val_macro_f1": 0.9302998414744962},
+    {"epoch": 4, "train_loss": 0.5625529558664841, "val_accuracy": 0.9498956158663883, "val_macro_f1": 0.9464709340692659},
+    {"epoch": 5, "train_loss": 0.54564459801062743, "val_accuracy": 0.9519832985386222, "val_macro_f1": 0.9477022129402426},
+    {"epoch": 6, "train_loss": 0.5446000713010685, "val_accuracy": 0.9311064718162839, "val_macro_f1": 0.9204551936693399},
+    {"epoch": 7, "train_loss": 0.5417924433946406, "val_accuracy": 0.9582463465553236, "val_macro_f1": 0.9538802049431154},
+    {"epoch": 8, "train_loss": 0.5340301267802715, "val_accuracy": 0.9227557411273486, "val_macro_f1": 0.9171238458201108},
+    {"epoch": 9, "train_loss": 0.5441673825184504, "val_accuracy": 0.9248434237995825, "val_macro_f1": 0.919161177398485},
+    {"epoch": 10, "train_loss": 0.5344000101049878, "val_accuracy": 0.9582463465553236, "val_macro_f1": 0.9552708984849311},
+    {"epoch": 11, "train_loss": 0.53248891034397121, "val_accuracy": 0.9686847599164927, "val_macro_f1": 0.9656964907235287},
+    {"epoch": 12, "train_loss": 0.5375315498355377, "val_accuracy": 0.9582463465553236, "val_macro_f1": 0.9539806246442061}
+  ],
+  "val_split": {
+    "n": 479,
+    "accuracy": 0.9686847599164927,
+    "macro_f1": 0.9656964907235287,
+    "per_class_accuracy": {
+      "Bacterial_Blight": 0.9848484848484849,
+      "Blast": 0.90625,
+      "Brown_Spot": 0.9666666666666667,
+      "Tungro": 1.0
+    }
+  },
+  "test_split": {
+    "n": 480,
+    "accuracy": 0.91875,
+    "macro_f1": 0.911359292881032,
+    "per_class_accuracy": {
+      "Bacterial_Blight": 0.9548872180451128,
+      "Blast": 0.78125,
+      "Brown_Spot": 0.9,
+      "Tungro": 1.0
+    },
+    "per_class_f1": {
+      "Bacterial_Blight": 0.9070844686648501,
+      "Blast": 0.8151815181518152,
+      "Brown_Spot": 0.9230769230769231,
+      "Tungro": 1.0
+    },
+    "confusion_matrix_counts": [
+      [127, 4, 2, 0],
+      [17, 75, 4, 0],
+      [3, 9, 108, 0],
+      [0, 0, 0, 131]
+    ]
+  },
+  "majority_baseline_test_accuracy": 0.27708333333333335,
+  "checkpoint": "runs/colab_mn12/best.pt",
+  "confusion_matrix_png": "runs/colab_mn12/confusion_matrix.png",
+  "command": "notebooks/dpdp_train_mobilenet.ipynb (Google Colab, Runtime > Run all)",
+  "notes": "Diukur ulang di mesin CPU dari checkpoint yang diunduh dari Colab; angka val dan test cocok dengan metrics.json milik Colab."
+}
